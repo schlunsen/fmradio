@@ -1,4 +1,3 @@
-
 #main_container {
     layout: vertical;
     padding: 1 2;
@@ -19,6 +18,13 @@
     overflow: hidden; 
 }
 #input_area {
+    layout: horizontal;
+    height: auto;
+    width: 100%;
+    align: center middle;
+    margin-bottom: 1;
+}
+#control_area {
     layout: horizontal;
     height: auto;
     width: 100%;
@@ -48,23 +54,42 @@ Button {
     color: $text; 
 }
 #stop_button {
-    width: 100%; 
     background: $error;
     color: $text; 
 }
-#scan_button {
+#record_button {
     background: $primary;
+    color: $text;
+}
+#scan_button {
+    background: $accent;
     color: $text;
 }
 #stop_scan_button {
     background: $error;
     color: $text;
 }
-#station_select {
+#stations_table {
     width: 100%;
-    height: 3;
-    margin-bottom: 1;
+    height: 12;
+    margin: 1 0;
     border: round $accent;
+    background: $panel;
+}
+#stations_table > .datatable--header {
+    background: $primary;
+    color: $text;
+    text-style: bold;
+}
+#stations_table > .datatable--row {
+    height: 1;
+}
+#stations_table > .datatable--row:hover {
+    background: $accent-darken-2;
+}
+#stations_table > .datatable--row.selected {
+    background: $accent;
+    color: $text;
 }
 Header {
     background: $primary;
@@ -75,4 +100,12 @@ Footer {
     background: $primary-lighten-2;
     color: $primary-background-darken-3;
     text-style: italic;
+}
+#mute_button {
+    background: $primary;
+    color: $text;
+}
+#mute_button.error {
+    background: $error;
+    color: $text;
 }
