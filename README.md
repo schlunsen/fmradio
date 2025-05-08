@@ -2,6 +2,9 @@
 
 A command-line FM radio application using RTL-SDR, built with Python and Textual.
 
+![Description of your photo](./pics/rtlsdr_dongle.png)
+
+
 ## Features
 
 - Real-time FM radio reception using RTL-SDR
