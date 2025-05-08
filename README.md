@@ -56,7 +56,7 @@ pip install -e .
 
 Run the application:
 ```bash
-fmradio
+poetry run python -m fmradio
 ```
 
 ### Controls
