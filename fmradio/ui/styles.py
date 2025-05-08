@@ -1,0 +1,97 @@
+"""CSS styles for the radio application."""
+
+RADIO_APP_CSS = """
+#main_container {
+    layout: vertical;
+    padding: 1 2;
+    background: $panel-darken-1;
+    border: heavy $primary-background-darken-2;
+    height: 100%;
+}
+#status_display {
+    width: 100%;
+    height: 3; 
+    padding: 1;
+    margin-bottom: 1;
+    border: round $accent;
+    content-align: center middle;
+    background: $panel;
+    text-style: bold;
+    color: $text;
+    overflow: hidden; 
+}
+#input_area {
+    layout: horizontal;
+    height: auto;
+    width: 100%;
+    align: center middle;
+    margin-bottom: 1;
+}
+#scan_area {
+    layout: horizontal;
+    height: auto;
+    width: 100%;
+    align: center middle;
+    margin: 1 0;
+}
+#freq_input {
+    width: 1fr; 
+    margin-right: 1;
+    height: 3;
+    padding: 0 1; 
+}
+Button {
+    min-width: 15; 
+    height: 3;
+    margin: 0 1; 
+}
+#tune_play_button {
+    background: $success;
+    color: $text; 
+}
+#stop_button {
+    width: 100%; 
+    background: $error;
+    color: $text; 
+}
+#scan_button {
+    background: $accent;
+    color: $text;
+}
+#stop_scan_button {
+    background: $error;
+    color: $text;
+}
+#stations_table {
+    width: 100%;
+    height: 12;
+    margin: 1 0;
+    border: round $accent;
+    background: $panel;
+}
+#stations_table > .datatable--header {
+    background: $primary;
+    color: $text;
+    text-style: bold;
+}
+#stations_table > .datatable--row {
+    height: 1;
+}
+#stations_table > .datatable--row:hover {
+    background: $accent-darken-2;
+}
+#stations_table > .datatable--row.selected {
+    background: $accent;
+    color: $text;
+}
+Header {
+    background: $primary;
+    color: $text;
+    text-style: bold;
+}
+Footer {
+    background: $primary-lighten-2;
+    color: $primary-background-darken-3;
+    text-style: italic;
+}
+""" 
